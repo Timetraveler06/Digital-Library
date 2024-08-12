@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className="text-white flex px-5 whitespace-nowrap">
           <p>BRESC Library</p>
         </div>
-        <div className="flex px-16 gap-24">
+        <div className="flex px-36 gap-24">
           <FlyoutLink href="#" FlyoutContent={SolutionsContent}>
             Solutions
           </FlyoutLink>
