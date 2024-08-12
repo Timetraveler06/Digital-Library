@@ -9,5 +9,6 @@ body,
   height: 100%;
   width: 100%;
   font-family: "DM Sans", sans-serif;
-  
+  color: rgba(252, 248, 241, 0.03); /* 0.03 is 3% opacity */
 }
+

@@ -15,8 +15,8 @@ const Navbar = () => {
   return (
     <>
     
-      <div className="hidden md:flex h-[100px] justify-between items-start bg-neutral-900 px-3 py-12">
-        <div className="text-white flex px-5 whitespace-nowrap">
+      <div className="hidden md:flex h-[100px] justify-between items-start  px-3 py-12">
+        <div className=" flex px-5 whitespace-nowrap ">
           <p>BRESC Library</p>
         </div>
         <div className="flex px-36 gap-24">
@@ -45,7 +45,7 @@ const Navbar = () => {
         </button>
 
         <div
-          className={`fixed top-0 right-0 h-full w-64 bg-neutral-900 transition-transform ${
+          className={`fixed top-0 right-0 h-full w-36 bg-neutral-900 transition-transform ${
             isOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
