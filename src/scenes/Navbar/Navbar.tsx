@@ -7,7 +7,7 @@ import { ResourceContent } from './Components/ResourceContent';
 import { SolutionsContent } from './Components/SolutionsContent';
 import { FlyoutLink } from './FlyOutLink';
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
 
@@ -37,19 +37,19 @@ const Navbar = () => {
           <p>BRESC Library</p>
         </div>
         <div className="flex px-36 gap-24">
-          <FlyoutLink href="#" FlyoutContent={SolutionsContent}>
+          <FlyoutLink to="/solutions" FlyoutContent={SolutionsContent}>
             Solutions
           </FlyoutLink>
-          <FlyoutLink href="#" FlyoutContent={ResourceContent}>
+          <FlyoutLink to="/resources" FlyoutContent={ResourceContent}>
             Resources
           </FlyoutLink>
-          <FlyoutLink href="#" FlyoutContent={AboutContent}>
+          <FlyoutLink to="/about" FlyoutContent={AboutContent}>
             About Us
           </FlyoutLink>
-          <FlyoutLink href="#" FlyoutContent={ContactContent}>
+          <FlyoutLink to="/contact" FlyoutContent={ContactContent}>
             Contact Us
           </FlyoutLink>
-          <FlyoutLink href="#" FlyoutContent={PricingContent}>
+          <FlyoutLink to="/pricing" FlyoutContent={PricingContent}>
             Pricing
           </FlyoutLink>
         </div>
@@ -69,27 +69,27 @@ const Navbar = () => {
           <div className="p-4">
             <ul className="flex flex-col gap-9 py-11">
               <li>
-                <FlyoutLink href="#" FlyoutContent={SolutionsContent}>
+                <FlyoutLink to="/solutions" FlyoutContent={SolutionsContent}>
                   Solutions
                 </FlyoutLink>
               </li>
               <li>
-                <FlyoutLink href="#" FlyoutContent={ResourceContent}>
+                <FlyoutLink to="/resources" FlyoutContent={ResourceContent}>
                   Resources
                 </FlyoutLink>
               </li>
               <li>
-                <FlyoutLink href="#" FlyoutContent={AboutContent}>
+                <FlyoutLink to="/about" FlyoutContent={AboutContent}>
                   About Us
                 </FlyoutLink>
               </li>
               <li>
-                <FlyoutLink href="#" FlyoutContent={ContactContent}>
+                <FlyoutLink to="/contact" FlyoutContent={ContactContent}>
                   Contact Us
                 </FlyoutLink>
               </li>
               <li>
-                <FlyoutLink href="#" FlyoutContent={PricingContent}>
+                <FlyoutLink to="/pricing" FlyoutContent={PricingContent}>
                   Pricing
                 </FlyoutLink>
               </li>

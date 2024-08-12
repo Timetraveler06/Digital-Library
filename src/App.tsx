@@ -1,19 +1,21 @@
-import './App.css'
-import Footer from './scenes/footer/footer'
-import Landing from './scenes/Home/Landing'
-import Navbar from './scenes/Navbar/Navbar'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Layout from './Layout'; // Adjust import path as needed
+import Landing from './scenes/Home/Landing'; // Adjust import path as needed
+import AboutPage from './scenes/pages/AboutPage/About'
 
-function App() {
-  
-
+const App: React.FC = () => {
   return (
-    <div className='Container '>
-     <Navbar />
-     <Landing />
-     <Footer/>
-     
-    </div>
-  )
-}
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/about" element={<AboutPage />} />
+          {/* Add more routes here */}
+        </Routes>
+      </Layout>
+    </Router>
+  );
+};
 
-export default App
+export default App;
