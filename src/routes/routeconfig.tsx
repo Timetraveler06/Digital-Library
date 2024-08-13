@@ -32,11 +32,21 @@ import Collab from "../scenes/pages/ContactPage/Collab";
 import Library from "../scenes/pages/ContactPage/Library";
 import Technical from "../scenes/pages/ContactPage/Technical";
 import Landing from "../scenes/Home/Landing";
+import Enterprise from "../scenes/pages/PricingPage/Enterprise";
+import StartUp from "../scenes/pages/PricingPage/StartUp";
+import Smb from "../scenes/pages/PricingPage/Smb";
+import Pay from "../scenes/pages/PricingPage/Pay";
+import Intro from "../scenes/pages/PricingPage/Intro";
 
 
 // routesConfig.ts
 const routesConfig = [
+
+
+     /** Home Route */
     { path: "/", element: <Landing/> },
+
+     /** Solution Route */
     { path: "/solution/benefitsSolutions", element: <BenefitsSolutions/> },
     { path: "/solution/catalog", element: <Catalog/> },
     { path: "/solution/circulation", element: <Circulation/> },
@@ -49,6 +59,8 @@ const routesConfig = [
     { path: "/solution/Support", element: <Support/> },
     { path: "/solution/Tailored", element: <TailoredSystems/> },
     { path: "/solution/usrManagement", element: <UsrManagement/> },
+
+     /** Resource Route */
     { path: "/resource/Bibliographic", element: <Bibliographic/> },
     { path: "/resource/Citation", element: <Citation/> },
     { path: "/resource/Search", element: <Search/> },
@@ -59,6 +71,8 @@ const routesConfig = [
     { path: "/resource/FAQs", element: <FAQs/> },
     { path: "/resource/Guides", element: <Guides/> },
     { path: "/resource/Contact", element: <ContactSupport/> },
+
+     /** About Route */
     { path: "/about", element: <About /> },
     { path: "/about/history", element: <History /> },
     { path: "/about/internship", element: <Internship /> },
@@ -66,12 +80,22 @@ const routesConfig = [
     { path: "/about/jobopening", element: <JobOpening /> },
     { path: "/about/team", element: <Team /> },
     { path: "/about/visval", element: <VisVal /> },
+
+     /** Contact Route */
     { path: "/contact/contactForm", element: <ContactForm /> },
     { path: "/contact/office", element: <Office /> },
     { path: "/contact/phone", element: <Phone /> },
     { path: "/contact/collab", element: <Collab/> },
     { path: "/contact/library", element: <Library /> },
     { path: "/contact/technical", element: <Technical /> },
+
+    /** Price Route */
+    { path: "/price/intro", element: <Intro /> },
+    { path: "/price/enterprise", element: <Enterprise /> },
+    { path: "/price/pay", element: <Pay /> },
+    { path: "/price/smb", element: <Smb /> },
+    { path: "/price/startup", element: <StartUp /> },
+    
     
   ];
   
