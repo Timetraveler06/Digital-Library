@@ -37,19 +37,19 @@ const Navbar: React.FC = () => {
           <a href="/">BRESC Library</a>
         </div>
         <div className="flex px-36 gap-24 ">
-          <FlyoutLink to="/solutions" FlyoutContent={SolutionsContent}>
+          <FlyoutLink FlyoutContent={SolutionsContent}>
             Solutions
           </FlyoutLink>
-          <FlyoutLink to="/resources" FlyoutContent={ResourceContent}>
+          <FlyoutLink  FlyoutContent={ResourceContent}>
             Resources
           </FlyoutLink>
-          <FlyoutLink to="/about" FlyoutContent={AboutContent}>
+          <FlyoutLink  FlyoutContent={AboutContent}>
             About Us
           </FlyoutLink>
-          <FlyoutLink to='/contact' FlyoutContent={ContactContent}>
+          <FlyoutLink  FlyoutContent={ContactContent}>
             Contact Us
           </FlyoutLink>
-          <FlyoutLink to="/pricing" FlyoutContent={PricingContent}>
+          <FlyoutLink  FlyoutContent={PricingContent}>
             Pricing
           </FlyoutLink>
         </div>
@@ -69,27 +69,27 @@ const Navbar: React.FC = () => {
           <div className="p-4">
             <ul className="flex flex-col gap-9 py-11">
               <li>
-                <FlyoutLink to="/solutions" FlyoutContent={SolutionsContent}>
+                <FlyoutLink  FlyoutContent={SolutionsContent}>
                   Solutions
                 </FlyoutLink>
               </li>
               <li>
-                <FlyoutLink to="/resources" FlyoutContent={ResourceContent}>
+                <FlyoutLink  FlyoutContent={ResourceContent}>
                   Resources
                 </FlyoutLink>
               </li>
               <li>
-                <FlyoutLink to="/about" FlyoutContent={AboutContent}>
+                <FlyoutLink  FlyoutContent={AboutContent}>
                   About Us
                 </FlyoutLink>
               </li>
               <li>
-                <FlyoutLink to="/contact" FlyoutContent={ContactContent}>
+                <FlyoutLink FlyoutContent={ContactContent}>
                   Contact Us
                 </FlyoutLink>
               </li>
               <li>
-                <FlyoutLink to="/pricing" FlyoutContent={PricingContent}>
+                <FlyoutLink FlyoutContent={PricingContent}>
                   Pricing
                 </FlyoutLink>
               </li>

@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 interface FlyoutLinkProps {
   children: React.ReactNode;
-  to: string; // Use 'to' for Link component
   FlyoutContent: React.FC;
 }
 
-export const FlyoutLink: React.FC<FlyoutLinkProps> = ({ children, to, FlyoutContent }) => {
+export const FlyoutLink: React.FC<FlyoutLinkProps> = ({ children, FlyoutContent }) => {
   const [open, setOpen] = useState(false);
   const [isSmallDevice, setIsSmallDevice] = useState(window.innerWidth < 640);
 
@@ -21,15 +19,13 @@ export const FlyoutLink: React.FC<FlyoutLinkProps> = ({ children, to, FlyoutCont
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
- 
-
   return (
     <div
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
       className="relative w-fit h-fit"
     >
-      <Link to={to} className="relative text-white">
+      <button className="relative text-white">
         {children}
         <span
           style={{
@@ -37,7 +33,7 @@ export const FlyoutLink: React.FC<FlyoutLinkProps> = ({ children, to, FlyoutCont
           }}
           className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 rounded-full bg-indigo-300 transition-transform duration-300 ease-out"
         />
-      </Link>
+      </button>
       <AnimatePresence>
         {open && (
           <motion.div
