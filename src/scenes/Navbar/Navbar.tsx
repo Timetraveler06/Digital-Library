@@ -37,19 +37,19 @@ const Navbar: React.FC = () => {
           <p>BRESC Library</p>
         </div>
         <div className="flex px-36 gap-24">
-          <FlyoutLink to="/solutions" FlyoutContent={SolutionsContent}>
+          <FlyoutLink to="/" FlyoutContent={SolutionsContent}>
             Solutions
           </FlyoutLink>
-          <FlyoutLink to="/resources" FlyoutContent={ResourceContent}>
+          <FlyoutLink to="/" FlyoutContent={ResourceContent}>
             Resources
           </FlyoutLink>
-          <FlyoutLink to="/about" FlyoutContent={AboutContent}>
+          <FlyoutLink to="/" FlyoutContent={AboutContent}>
             About Us
           </FlyoutLink>
-          <FlyoutLink to="/contact" FlyoutContent={ContactContent}>
+          <FlyoutLink to='/' FlyoutContent={ContactContent}>
             Contact Us
           </FlyoutLink>
-          <FlyoutLink to="/pricing" FlyoutContent={PricingContent}>
+          <FlyoutLink to="/" FlyoutContent={PricingContent}>
             Pricing
           </FlyoutLink>
         </div>
