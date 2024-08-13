@@ -29,7 +29,7 @@ export const FlyoutLink: React.FC<FlyoutLinkProps> = ({ children, to, FlyoutCont
       onMouseLeave={() => setOpen(false)}
       className="relative w-fit h-fit"
     >
-      <Link to={to} className="relative text-white md:text-black">
+      <Link to={to} className="relative text-white">
         {children}
         <span
           style={{

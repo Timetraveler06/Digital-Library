@@ -30,26 +30,26 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <div className={`transition-all ease-in ${isFixed ? 'fixed top-0 z-50 w-full bg-white shadow-md' : 'relative'}`}>
+    <div className={`transition-all ease-in ${isFixed ? 'fixed top-0 z-50 w-full  shadow-md' : 'relative'}`}>
       {/* Desktop Navbar */}
-      <div className={`hidden md:flex h-[100px] justify-between items-start px-3 py-12 ${isFixed ? 'bg-white shadow-md' : 'bg-transparent'}`}>
+      <div className={`hidden md:flex h-[100px] md:bg-black  justify-between items-start px-3 py-12 ${isFixed ? 'bg-white shadow-md' : 'bg-transparent'}`}>
         <div className="flex px-5 whitespace-nowrap font-extrabold text-black">
           <p>BRESC Library</p>
         </div>
-        <div className="flex px-36 gap-24">
+        <div className="flex px-36 gap-24 ">
           <FlyoutLink to="/solutions" FlyoutContent={SolutionsContent}>
             Solutions
           </FlyoutLink>
-          <FlyoutLink to="/" FlyoutContent={ResourceContent}>
+          <FlyoutLink to="/resources" FlyoutContent={ResourceContent}>
             Resources
           </FlyoutLink>
           <FlyoutLink to="/about" FlyoutContent={AboutContent}>
             About Us
           </FlyoutLink>
-          <FlyoutLink to='/' FlyoutContent={ContactContent}>
+          <FlyoutLink to='/contact' FlyoutContent={ContactContent}>
             Contact Us
           </FlyoutLink>
-          <FlyoutLink to="/" FlyoutContent={PricingContent}>
+          <FlyoutLink to="/pricing" FlyoutContent={PricingContent}>
             Pricing
           </FlyoutLink>
         </div>
