@@ -7,7 +7,7 @@ export const AboutContent = () => {
           <a href="/visval" className="block text-sm hover:underline px-2">
             Vision and Values
           </a>
-          <a href="/history" className="block text-sm hover:underline px-2">
+          <a href="/about/history" className="block text-sm hover:underline px-2">
             History and Background
           </a>
         </div>

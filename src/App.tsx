@@ -4,6 +4,7 @@ import Layout from './Layout'; // Adjust import path as needed
 import Landing from './scenes/Home/Landing'; // Adjust import path as needed
 import About from './scenes/pages/AboutPage/About'
 import Contact from './scenes/pages/ContactPage/Contact';
+import History from './scenes/pages/AboutPage/History';
 
 const App: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/About" element={<About />} />
+          <Route path="/about/history" element={<History />} />
           <Route path="/Contact" element={<Contact />} />
           {/* Add more routes here */}
         </Routes>

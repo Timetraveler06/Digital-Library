@@ -2,7 +2,7 @@ import React from 'react'
 
 const VisVal = () => {
   return (
-    <div>VisVal</div>
+    <section className='bg-slate-600 w-full h-[700px] text-white'>VisVal</section>
   )
 }
 
