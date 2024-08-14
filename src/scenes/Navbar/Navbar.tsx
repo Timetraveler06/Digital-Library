@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
           }}>
      
             
-          <div className={`hidden md:flex h-[100px] md:bg-black  justify-between items-start px-3 py-12 ${isFixed ? 'bg-white shadow-md' : 'bg-transparent'}`}>
+          <div className={`hidden md:flex h-[100px] md:bg-black justify-between items-start px-3 py-12 ${isFixed ? 'bg-white shadow-md' : 'bg-transparent'}`}>
             <div className="flex px-5 whitespace-nowrap font-extrabold text-white">
               <a href="/">BRESC Library</a>
             </div>
