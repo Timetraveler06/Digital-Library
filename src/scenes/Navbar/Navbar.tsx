@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className={`transition-all ease-in ${isFixed ? 'fixed top-0 z-50 w-full  shadow-md' : 'relative'}`}>
+    <nav className='transition-all ease-in fixed w-full z-20 top-0 start-0 '>
       
                 {/* Desktop Navbar */}
      
