@@ -45,7 +45,12 @@ export const FlyoutLink: React.FC<FlyoutLinkProps> = ({ children, FlyoutContent 
             className="absolute left-1/2 top-12 bg-white text-black"
           >
             <div className="absolute -top-6 left-0 right-0 h-6 bg-transparent" />
-            <div className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-white" />
+              <div className="absolute top-0 right-2 h-5 w-8 bg-white  rotate-45
+                  md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2
+                  md:right-0 md:w-5">
+              </div>
+
+
             <FlyoutContent />
           </motion.div>
         )}
