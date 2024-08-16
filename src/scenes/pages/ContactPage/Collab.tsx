@@ -2,7 +2,7 @@ import React from 'react'
 
 const Collab = () => {
   return (
-    <section className='bg-slate-600 w-full h-[700px] text-white'>Collab</section>
+    <section className=' dark:bg-gray-900 w-full h-[700px] py-[100px] text-white'>Collab</section>
   )
 }
 

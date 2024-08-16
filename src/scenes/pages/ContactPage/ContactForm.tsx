@@ -9,7 +9,7 @@ const ContactForm: React.FC = () => {
   return (
     
     <section id="contactForm" >
-      <section className='bg-gray-700 h-screen text-white'>
+      <section className=' dark:bg-gray-900 h-screen py-[100px] text-white'>
           <p >Contact Form</p>
       </section>
 
