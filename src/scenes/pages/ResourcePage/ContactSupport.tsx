@@ -4,7 +4,8 @@ const ContactSupport = () => {
   return (
     <section className='dark:bg-gray-900 py-[100px] w-full h-[700px]  text-white'>
       <div>
-        <div></div>
+        <h1>Contact Admin</h1>
+        <p>This is the About page content.</p>
       </div>
     </section>
   )
