@@ -2,8 +2,8 @@
 const Landing = () => {
   return (
     <div className='bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:py-60'>
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-36">
-            <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
+        <div className=" px-6 mx-auto max-w-7xl pt-16 px-16 lg:px-36">
+            <div className=" grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
                 <div>
                     <p className="text-base font-semibold tracking-wider text-blue-600 uppercase">A social media for learners</p>
                     <h1 className="mt-4 text-4xl font-bold text-black lg:mt-8 sm:text-1xl xl:text-8xl">Connect & learn from the experts</h1>
